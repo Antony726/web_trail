@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop | Liya Bridal Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<section class="page-hero"><div class="container"><span class="eyebrow">Beauty Boutique</span><h1 class="title">Our <span class="gold-text">Shop</span></h1><p class="sub">Add items to your cart, then send your order as a PDF on WhatsApp.</p></div></section>
+
+<section>
+  <div class="container">
+    <div class="shop-bar" id="shop-bar"></div>
+    <div class="grid g4 keep2" id="shop-grid"></div>
+  </div>
+</section>
+
+<button class="cart-fab" id="cart-open" aria-label="Open cart">🛍️<span id="cart-count">0</span></button>
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer">
+  <h3><span class="gold-text">Your Cart</span><button id="cart-close" aria-label="Close">×</button></h3>
+  <div class="cart-list" id="cart-list"></div>
+  <input id="cust-name" placeholder="Your name">
+  <div class="total"><span>Total</span><b class="gold-text" id="cart-total">₹0</b></div>
+  <button class="btn btn-gold" id="send-wa" style="width:100%">Generate PDF &amp; Send on WhatsApp</button>
+</aside>
+
+<div id="site-footer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
